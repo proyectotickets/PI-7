@@ -60,7 +60,14 @@ class InicioDeSesionViewController: UIViewController {
         }
         if idUsuario != 0 {
             print("Sesión exitosa")
-            //idUsuario = 0
+            //Borramos tabla
+            let eliminarTabla = self.sesionTabla.drop()
+            do {
+                try self.database.run(eliminarTabla)
+                print("Tabla borrada")
+            } catch {
+                print(error)
+            }
             //Crear la tabla de Usuarios
             let crearTabla = self.sesionTabla.create { (tabla) in
                 tabla.column(self.idUsuarioSesExp, primaryKey: true)
@@ -75,7 +82,7 @@ class InicioDeSesionViewController: UIViewController {
             }
             
             //Guardar sesión
-            let registrarSesion = self.sesionTabla.insert(self.idUsuarioSesExp <- self.idTipoUsuario, self.idTipoUsuarioSesExp <- self.idTipoUsuario)
+            let registrarSesion = self.sesionTabla.insert(self.idUsuarioSesExp <- self.idUsuario, self.idTipoUsuarioSesExp <- self.idTipoUsuario)
             
             do {
                 try self.database.run(registrarSesion)
@@ -87,6 +94,12 @@ class InicioDeSesionViewController: UIViewController {
             //Ejecutar segue
             if idTipoUsuario == 1 {
                 self.performSegue(withIdentifier: "universitarioSegue", sender: self)
+            }
+            if idTipoUsuario == 2 {
+                self.performSegue(withIdentifier: "bibliotecarioSegue", sender: self)
+            }
+            if idTipoUsuario == 3 {
+                self.performSegue(withIdentifier: "responsableSegue", sender: self)
             }
             
         } else {
@@ -108,7 +121,10 @@ class InicioDeSesionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "universitarioSegue"{
-            
+        }
+        if segue.identifier == "bibliotecarioSegue"{
+        }
+        if segue.identifier == "responsableSegue"{
         }
     }
 
