@@ -10,5 +10,6 @@
 
 ### Para tutorial para crear y manejar ramas en git https://www.genbetadev.com/herramientas/manejo-de-ramas-de-desarrollo-con-git
 
+## Requerimientos del sistema
 
-:D
+## Objetivo del sistema
