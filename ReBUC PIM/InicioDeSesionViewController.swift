@@ -101,6 +101,9 @@ class InicioDeSesionViewController: UIViewController {
             if idTipoUsuario == 3 {
                 self.performSegue(withIdentifier: "responsableSegue", sender: self)
             }
+            if idTipoUsuario == 4 {
+                self.performSegue(withIdentifier: "administradorSegue", sender: self)
+            }
             
         } else {
             print("Error en los datos")
@@ -125,6 +128,8 @@ class InicioDeSesionViewController: UIViewController {
         if segue.identifier == "bibliotecarioSegue"{
         }
         if segue.identifier == "responsableSegue"{
+        }
+        if segue.identifier == "administradorSegue"{
         }
     }
 
