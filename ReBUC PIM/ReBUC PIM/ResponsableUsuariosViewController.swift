@@ -24,7 +24,7 @@ class ResponsableUsuariosViewController: UIViewController, UITableViewDataSource
     var idUsuarios: [Int] = []
     var nombreUsuarios: [String] = []
     var idTipoUsuarios: [Int] = []
-    var tipoUsuariosData: [String] = ["Universitario", "Bibliotecario", "Responsable"]
+    var tipoUsuariosData: [String] = ["Universitario", "Bibliotecario", "Responsable", "Administrador"]
     var idUsuario: Int!
     var idTipoUsuario: Int!
     

@@ -18,6 +18,7 @@
 		5D01357C1F98E7B50094B4D6 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D01356C1F98E7A10094B4D6 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D0135811F98E92F0094B4D6 /* InicioDeSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0135801F98E92F0094B4D6 /* InicioDeSesionViewController.swift */; };
 		5D0135831F98ECEF0094B4D6 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0135821F98ECEF0094B4D6 /* RegistroViewController.swift */; };
+		5D3067451FC4749F00FF4995 /* AdministradorPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3067441FC4749F00FF4995 /* AdministradorPerfilViewController.swift */; };
 		5D5503AD1FB1FA5F006100F5 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5503AC1FB1FA5F006100F5 /* UniverComentarTicketsViewController.swift */; };
 		5D5503B51FB20AE0006100F5 /* UniverPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5503B41FB20AE0006100F5 /* UniverPerfilViewController.swift */; };
 		5D5FE1471FB4A5230013E9E5 /* BibliotecarioVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5FE1461FB4A5230013E9E5 /* BibliotecarioVerTicketsViewController.swift */; };
@@ -137,6 +138,7 @@
 		5D0135611F98E7A10094B4D6 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		5D0135801F98E92F0094B4D6 /* InicioDeSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioDeSesionViewController.swift; sourceTree = "<group>"; };
 		5D0135821F98ECEF0094B4D6 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		5D3067441FC4749F00FF4995 /* AdministradorPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorPerfilViewController.swift; sourceTree = "<group>"; };
 		5D5503AC1FB1FA5F006100F5 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
 		5D5503B41FB20AE0006100F5 /* UniverPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverPerfilViewController.swift; sourceTree = "<group>"; };
 		5D5FE1461FB4A5230013E9E5 /* BibliotecarioVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioVerTicketsViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				5D0135331F98E7290094B4D6 /* AppDelegate.swift */,
 				5D0135371F98E7290094B4D6 /* Main.storyboard */,
+				5D3067441FC4749F00FF4995 /* AdministradorPerfilViewController.swift */,
 				5DAF74AE1FBDF08B00C534E3 /* AdministradorUsuariosViewController.swift */,
 				5DAF74AC1FBDE89F00C534E3 /* AdministradorResponderTicketViewController.swift */,
 				5DAF74A21FBDDAF700C534E3 /* ResponsableUsuariosViewController.swift */,
@@ -477,6 +480,7 @@
 				5DAF74AB1FBDE47F00C534E3 /* AdministradorVerTicketsViewController.swift in Sources */,
 				5D7630691FBB33BD00BF618D /* ResponsableVerTicketsViewController.swift in Sources */,
 				5D0135831F98ECEF0094B4D6 /* RegistroViewController.swift in Sources */,
+				5D3067451FC4749F00FF4995 /* AdministradorPerfilViewController.swift in Sources */,
 				5DAF74AF1FBDF08B00C534E3 /* AdministradorUsuariosViewController.swift in Sources */,
 				5D0135811F98E92F0094B4D6 /* InicioDeSesionViewController.swift in Sources */,
 				5D5503B51FB20AE0006100F5 /* UniverPerfilViewController.swift in Sources */,

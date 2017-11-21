@@ -34,6 +34,7 @@ class UniverVerTicketsViewController: UIViewController, UITableViewDataSource, U
     var idTickets = [Int]()
     var consultas = [String]()
     var estatus = [String]()
+    var idUsuarios = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,6 +108,28 @@ class UniverVerTicketsViewController: UIViewController, UITableViewDataSource, U
             vc.idTicket = self.idTicket
             vc.descripcion = self.descripcion
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Reiniciar datos
+        idTickets.removeAll()
+        consultas.removeAll()
+        estatus.removeAll()
+        
+        //Obtener los datos de cada ticket y guardarlos en arreglos
+        do {
+            let tickets = self.ticketsTabla.filter(self.idUsuarioExp == idUsuario! || self.idUsuarioExp == 0)
+            for ticket in try database.prepare(tickets) {
+                self.idTickets.append(ticket[self.idTicketExp])
+                self.consultas.append(ticket[self.consultaExp])
+                self.estatus.append(ticket[self.estatusExp])
+            }
+        } catch {
+            print(error)
+        }
+        
+        //Recargar tabla
+        ticketsTableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
